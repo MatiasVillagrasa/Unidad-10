@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var array = [...Array(15)].map(() => Math.floor(Math.random() * 9));
+        var mostrar = parseInt(0);
+
+        for (i = 0; i <= array.length; i++) {
+            if (mostrar < array[i]) {
+                mostrar = array[i];
+                // document.write('<br>');
+                // document.write(array[i]);
+            }
+        }
+        document.write('<br>');
+        document.write('<br>');
+        document.write(mostrar);
+    </script>
+</body>
+
+</html>
